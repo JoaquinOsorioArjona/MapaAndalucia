@@ -25,14 +25,23 @@
 		padding: 0;
 		margin: 0;
 	}
-	html, body, #map {
-		height: 100%;
+	html, #map {
+		height:100%;
 		font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+	body{
+		height: 95%;
+		background-color: #F0FFFF;
+	}
+	#map { 
+		width: 100%;
+		height:100%;
+		box-shadow: 5px 5px 5px #888;
 	}
 	header {
 		background-color: #F0FFFF;  
 		color: #000000;
-		font-family: "arial";
+		font: 15px Calibri, sans-serif;
 		text-align: center;
 		height: 3%;
 	}
@@ -45,7 +54,7 @@
 	.leaflet-control-layers-expanded {
 		background: #F0FFFF none repeat scroll 0 0;
 		color: #483D8B;
-		 font: 15px Calibri, sans-serif;
+		font: 15px Calibri, sans-serif;
 		padding: 6px 10px 6px 6px;
 	}
 	.legend {
@@ -95,7 +104,7 @@
 	<script src="linea.js"></script>
 	
 	<header>
-	<h2>Visor Web de la Línea General de Ferrocarril de Andalucía</h2>
+	<h2>Visor Web de la Línea General de Ferrocarril de Andalucía (Tren Madrid/Linares/Córdoba/Sevilla/Cádiz)</h2>
 	</header>
 	<div id="sidebar" class="sidebar collapsed">
 	<div class="sidebar-tabs">
@@ -327,5 +336,8 @@
 	}
 	});
 	</script>
+	<div style=text-align:right>
+		<p style=color:black><strong>Autor: Joaquín Osorio Arjona (Doctor en Geografía, Investigador en la Universidad de Sevilla. <a href=”url”>www.joaquinosorioarjona.com</a></strong></p>	
+	</div>
 </body>
 </html>
